@@ -10,6 +10,7 @@ int main(int argc, char const *argv[])
     // variable in snake_case form
     char snake_var[100];
     scanf("%s", snake_var);
+    int snake_length = strlen(snake_var);
 
     // variable in camelCase form
     char camelVar[100];
@@ -20,7 +21,7 @@ int main(int argc, char const *argv[])
     unsigned char snake = 0;
 
     // do the conversion
-    for (int i = 0; i < strlen(snake_var); ++i)
+    for (int i = 0; i < snake_length; ++i)
     {
         if (snake_pos == '_')
         {
